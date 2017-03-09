@@ -1,0 +1,10 @@
+<li class="index-item-outline <%if(top){%>istop<%}%>">
+	
+	<%if(!top){%><div class="index-line"></div><%}%>
+	<div class="index-item">
+			<h3 class="title"><%=data.title%></h3>
+			<h5 class="subtitle"><%=data.subtitle%></h5>
+			<p class="content"><%=data.content%></p>
+	</div>
+	<%if(top){%><div class="index-line"></div><%}%>
+</li>

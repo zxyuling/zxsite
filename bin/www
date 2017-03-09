@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('zxsite:server');
+var debug = require('debug')('hayate:server');
 var http = require('http');
 
 /**
