@@ -1,9 +1,7 @@
 .index-item-outline{
-	float: left;
-	flex-shrink:0;
+	display: table-cell;
 	position: relative;
-	padding: 10px;
-	margin-right: 40px;
+	padding: 10px 40px 10px 10px;
 	&:after{
 		content: '';
 		width: 8px;
@@ -60,6 +58,7 @@
 	.title{
 		font-size: 14px;
 		font-weight: bold;
+		white-space: nowrap;
 	}
 	.subtitle{
 		font-size: 14px;
