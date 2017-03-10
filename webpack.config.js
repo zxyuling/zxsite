@@ -22,7 +22,7 @@ var config = {
     new ExtractTextPlugin("style/[name]_[hash].css"),
     new webpack.ProvidePlugin({ //加载jq
       $: 'jquery',
-      'baidu':__dirname+'/node_modules/.1.0.5-dev@baidutemplate/baiduTemplate.js'
+      'baidu':__dirname+'/node_modules/baidutemplate/baiduTemplate.js'
     })
   ]
 }
