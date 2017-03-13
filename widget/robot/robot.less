@@ -1,0 +1,71 @@
+@firstcolor:#000;
+@endcolor:#fff;
+.robot{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 0;
+    bottom:0;
+    z-index: 999;
+    .robot-input{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        opacity: 0;
+    }
+}
+.md-outline
+{
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.md-part-border2 
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-top: 10px solid @firstcolor;
+    border-bottom: 10px solid @firstcolor;
+    border-left: 10px solid @endcolor;
+    border-right: 10px solid @endcolor;
+    animation:mdb2 0.5s infinite linear;
+    position: absolute;
+    left: 10px;
+    top:10px;
+    box-shadow: 0 0 1px @endcolor,0 0 1px @endcolor,0 0 1px @endcolor,0 0 1px @endcolor,0 0 1px @endcolor,0 0 1px @endcolor,0 0 1px @endcolor;
+
+}
+.md-part-border1
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border-left: 12px solid @firstcolor;
+    border-right: 12px solid @firstcolor;
+    border-top: 12px solid #ddd;
+    border-bottom: 12px solid #ddd;   
+    animation:mdb1 1s infinite ease-in-out;
+}
+.md-guang
+{
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px @endcolor,inset 0 0 10px @endcolor,inset 0 0 10px @endcolor,0 0 50px @endcolor;
+    animation:mdg 1s infinite alternate ease-in-out;
+}
+@keyframes mdb1
+{
+from {transform:rotate(0deg)}
+to {transform:rotate(720deg)}
+}
+ @keyframes mdg
+ {
+     from {opacity: 0;box-shadow: inset 0 0 0px @firstcolor,inset 0 0 0px,inset 0 0 10px,0 0 0px @firstcolor;}
+ to {opacity: 1;box-shadow: inset 0 0 10px @endcolor,inset 0 0 10px @endcolor,inset 0 0 10px @endcolor,0 0 50px @endcolor;}
+ }
+@keyframes mdb2
+{
+from {transform:rotate(0deg);}
+to {transform:rotate(-180deg);}
+}

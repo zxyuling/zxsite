@@ -13,6 +13,7 @@ var config = {
   },
   module: {
     loaders: [
+    {test: /\.js$/, loader: 'babel-loader'},
      {test: /\.less$/, loader: ExtractTextPlugin.extract({fallback:'style-loader',use:'css-loader!less-loader!autoprefixer-loader?{browsers:["last 20 version", "> 1%"]}'})},
      {test: /\.ejs$/, loader: 'html-loader?interpolate'},
      {test: /\.(jpe?g|png|gif|svg)$/i,loader: "url-loader?limit=8192&name=images/[name]_[hash].[ext]"},
