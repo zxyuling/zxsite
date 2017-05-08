@@ -3,7 +3,6 @@ var path = require('path');
 var glob = require('glob');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-require(__dirname+'/node_modules/editor.md/editormd.min.js')
 var entries = getEntry('page/**/*.js', [__dirname+'/layout/layout']);
 var config = {
   entry: entries,
