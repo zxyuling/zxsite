@@ -6,6 +6,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 require(__dirname+'/node_modules/editor.md/editormd.min.js')
 var entries = getEntry('page/**/*.js', [__dirname+'/layout/layout']);
 var config = {
+   devtool: "cheap-module-source-map",
   entry: entries,
   output: {
     'path':path.join(__dirname,'public'),

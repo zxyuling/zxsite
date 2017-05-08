@@ -3,7 +3,7 @@
 .index-item-outline{
 	display: table-cell;
 	position: relative;
-	padding: 10px 40px 10px 10px;
+	padding: 10px 40px 0 10px;
 	&:after{
 		content: '';
 		width: 8px;
@@ -52,11 +52,12 @@
 	}
 }
 .index-item{
-	height: 155px;
+	max-height: 155px;
 	margin: 10px;
 	color:#333;
 	overflow: hidden;
 	position: relative;
+	cursor: pointer;
 	.title{
 		font-size: 14px;
 		font-weight: bold;
@@ -74,13 +75,12 @@
 	.content{
 		font-size: 14px;
 		width: 100%;
-		position: absolute;
 		overflow: hidden;
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: 5;
 		overflow: hidden;
-		margin-top: 30px;
+		margin-top: 20px;
 		color:#7b7b7b;
 	}
 }

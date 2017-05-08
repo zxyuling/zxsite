@@ -22,7 +22,16 @@ router.post('/edit/save', function(req, res, next) {
         "content":req.body.content
     })
     mongo.save(e=>{
-        console.log(e)
+        if(e){console.log(e)}
     })
+    res.send('save ok')
+});
+
+router.post('/edit/get', function(req, res, next) {
+    editModel.find((err,rs)=>{
+        if(err){console.log(err)}
+        res.send({data:rs})
+    })
+
 });
 module.exports = router;
