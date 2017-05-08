@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/editor.md/css/editormd.min.css">
+    <link rel="stylesheet" href="/editormd/css/editormd.min.css">
     <title>编辑器</title>
 </head>
 <body>
@@ -13,12 +13,12 @@ ${require('../../widget/editHeader/editHeader.ejs')}
     <textarea class="editormd-html-textarea" name="$id-html-code"></textarea>
 </div>
 </body>
-<script src="/editor.md/editormd.min.js"></script>
+<script src="/editormd/editormd.min.js"></script>
 <script>
     testEditor = editormd("editormd", {
                         width: "70%",
                         height: 840,
-                        path : '/editor.md/lib/',
+                        path : '/editormd/lib/',
                         theme : "light",
                         previewTheme : "light",
                         editorTheme : "pastel-on-light",

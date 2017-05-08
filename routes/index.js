@@ -22,7 +22,7 @@ router.post('/edit/save', function(req, res, next) {
         "content":req.body.content
     })
     mongo.save(e=>{
-        if(e){console.log(e)}
+        if(e){console.log(e,1)}
     })
     res.send('save ok')
 });
