@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-var path = require('path');
+const path = require('path');
 const db = mongoose.createConnection('mongodb://127.0.0.1:27017/blog');
 const glob = require('glob');
 db.on('error',console.error.bind(console,'连接错误:'))
