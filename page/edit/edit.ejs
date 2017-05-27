@@ -8,9 +8,9 @@
 <body>
 ${require('../../widget/editHeader/editHeader.ejs')}
     <div  id='editormd'>
-    <textarea class="editormd-markdown-textarea" name="$id-markdown-doc"></textarea>
+    <textarea class="editormd-markdown-textarea" name="$id-markdown-doc" style="display: none;"><%=typeof markdown=='undefined'?'':markdown%></textarea>
     <!-- html textarea 需要开启配置项 saveHTMLToTextarea == true -->
-    <textarea class="editormd-html-textarea" name="$id-html-code"></textarea>
+    <textarea class="editormd-html-textarea" name="$id-html-code" style="display: none;"></textarea>
 </div>
 </body>
 <script src="/editormd/editormd.min.js"></script>

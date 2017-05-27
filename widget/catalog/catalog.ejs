@@ -1,0 +1,7 @@
+<div class="catalog global">
+	<ul>
+		<%data.forEach(function(item){%>
+		<li data-id=<%=item._id%>><a href="/doc/<%=item._id%>" target="_bank"><%=item.title%></a></li>
+		<%})%>
+	</ul>
+</div>

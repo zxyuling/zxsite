@@ -1,0 +1,1 @@
+requie('./catalog.less');
