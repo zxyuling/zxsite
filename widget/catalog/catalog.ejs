@@ -1,7 +1,13 @@
 <div class="catalog global">
 	<ul>
 		<%data.forEach(function(item){%>
-		<li data-id=<%=item._id%>><a href="/doc/<%=item._id%>" target="_bank"><%=item.title%></a></li>
+		<li data-id=<%=item._id%>>
+			<a href="/doc/<%=item._id%>" target="_bank"><%=item.title%></a>
+			<div class="catalog-item-right"> 
+				<span class="catalog-type"><%=item.type%></span>
+				<span class="catalog-time"><%=item.time%></span>
+			</div>
+		</li>
 		<%})%>
 	</ul>
 </div>

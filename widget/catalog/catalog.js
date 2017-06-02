@@ -1,1 +1,1 @@
-requie('./catalog.less');
+require('./catalog.less');

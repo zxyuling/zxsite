@@ -1,7 +1,7 @@
 @firstcolor:#000;
 @endcolor:#fff;
 .robot{
-    position: absolute;
+    position: fixed;
     width: 150px;
     height: 150px;
     left: 0;
@@ -12,6 +12,8 @@
         height: 120px;
         border-radius: 50%;
         opacity: 0;
+        position: absolute;
+        z-index: -1;
     }
 }
 .md-outline
@@ -33,7 +35,7 @@
     position: absolute;
     left: 10px;
     top:10px;
-    box-shadow: 0 0 1px @endcolor,0 0 1px @endcolor,0 0 1px @endcolor,0 0 1px @endcolor,0 0 1px @endcolor,0 0 1px @endcolor,0 0 1px @endcolor;
+    box-shadow: 0 0 1px @firstcolor,0 0 1px @firstcolor,0 0 1px @firstcolor,0 0 1px @firstcolor,0 0 1px @firstcolor,0 0 1px @firstcolor,0 0 1px @firstcolor;
 
 }
 .md-part-border1
