@@ -12,6 +12,7 @@ const readPage = function(){
 switch(readPage()){
     case 'index':
         $('#J-audio').style.zIndex=1;
+        $('.explain').style.display="block";
         audio.addEventLister('#J-audio',{analyser:db.analyser,ended:db.ended});
         break;
     case 'doc':
