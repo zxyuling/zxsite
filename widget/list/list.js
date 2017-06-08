@@ -12,7 +12,7 @@ $.ajax({
 })
 
 $('.list').on('click','[data-id]',function(){
-    const id = $('[data-id]').attr('data-id');
+    const id = $(this).attr('data-id');
     document.location.href="/doc/"+id
 })
 
@@ -24,7 +24,6 @@ const renderList = function(res){
             "title":item.title,
             "content":item.html.replace(/<img[^>]*>/,'[图片]').replace(/<[^>]*>/g,'')
         }
-        console.log(data)
         if($listBottom[0].clientWidth>$listTop[0].clientWidth){
             $listTop.append(templ(tpl,{data:data,top:1}))
         }else{

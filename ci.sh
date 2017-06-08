@@ -1,4 +1,4 @@
 #!/bin/sh
 npm install
-webpack -pw
+webpack
 pm2 restart 0

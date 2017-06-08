@@ -10,7 +10,6 @@ function move(tar,listen)
 		var firstMouseY = 0;
 		var firstTarX = 0;
 		var firstTarY = 0;
-			 console.log(bodyHeight)
 		function mouseDown(event)
 		{
 			$(document).on('mousemove',mouseMove);
@@ -21,7 +20,6 @@ function move(tar,listen)
 			var $nTarCss = window.getComputedStyle($nTar);
 			firstTarX= $nTar.offsetLeft-parseInt($nTarCss.marginLeft);
 			firstTarY = $nTar.offsetTop-parseInt($nTarCss.marginTop);
-			console.log('down')
 		}
 		function mouseUp()
 		{
