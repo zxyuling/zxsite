@@ -12,7 +12,7 @@ module.exports = {
             capStyle = '#fff',
             meterNum = cwidth / (10 + 2), //频谱条数量
             capYPositionArray = []; //将上一画面各帽头的位置保存到这个数组
-        ctx = canvas.getContext('2d'),
+        var ctx = canvas.getContext('2d'),
         gradient = ctx.createLinearGradient(0, 0, 0, 300);
         gradient.addColorStop(1, '#0f0');
         gradient.addColorStop(0.5, '#ff0');
