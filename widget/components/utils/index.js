@@ -4,8 +4,8 @@ module.exports = {
 		const tarReg = /:([^:]*):/g;
 		const reg = new RegExp(router.replace(tarReg,'([\\s\\S]*)'));
 		const result  = reg.exec(url);
-		let data={};
-		for(let i=1,tar;tar = tarReg.exec(router);i++){
+		var data={};
+		for(var i=1,tar;tar = tarReg.exec(router);i++){
 			data[tar[1]] = result[i]
 		}
 		return data;
