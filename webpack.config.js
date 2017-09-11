@@ -14,7 +14,7 @@ var config = {
   },
   module: {
     loaders: [
-    {test: /\.js$/, loader: 'babel-loader'},
+    {test: /\.js$/, loader: 'babel-loader?presets[]=es2015',exclude:__dirname+'/node_modules/baidutemplate'},
      {test: /\.(css|less)$/, loader: ExtractTextPlugin.extract({fallback:'style-loader',use:'css-loader!less-loader'})},
      {test: /\.ejs$/, loader: 'html-loader?interpolate'},
      {test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/i,loader: "url-loader?limit=8192&name=images/[name]_[hash].[ext]"},
