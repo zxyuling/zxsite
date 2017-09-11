@@ -3864,8 +3864,7 @@
   font-size: 14px;
 }
 .editormd-preview-container pre, .editormd-html-preview pre {
-  border: 1px solid #ddd;
-  background: #f6f6f6;
+  background: #23241f;
   padding: 10px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -3910,18 +3909,18 @@
 /*! Pretty printing styles. Used with prettify.js. */
 /* SPAN elements with the classes below are added by prettyprint. */
 .pln {
-  color: #000;
+  color: #f8f8f2;
 }
 
 /* plain text */
 @media screen {
   .str {
-    color: #080;
+    color: #e6db74;
   }
 
   /* string content */
   .kwd {
-    color: #008;
+    color: #f92672;
   }
 
   /* a keyword */
@@ -3931,7 +3930,7 @@
 
   /* a comment */
   .typ {
-    color: #606;
+    color: #f8f8f2;
   }
 
   /* a type name */
@@ -3942,7 +3941,7 @@
   /* a literal value */
   /* punctuation, lisp open bracket, lisp close bracket */
   .pun, .opn, .clo {
-    color: #660;
+    color: #f8f8f2;
   }
 
   .tag {
@@ -4035,16 +4034,17 @@ li.L6,
 li.L7,
 li.L8 {
   list-style-type: none;
+  color:#f8f8f2;
 }
 
 /* Alternate shading for lines */
-li.L1,
-li.L3,
-li.L5,
-li.L7,
-li.L9 {
-  background: #eee;
-}
+// li.L1,
+// li.L3,
+// li.L5,
+// li.L7,
+// li.L9 {
+//   background: #eee;
+// }
 
 .editormd-preview-container pre.prettyprint, .editormd-html-preview pre.prettyprint {
   padding: 10px;
@@ -4053,7 +4053,7 @@ li.L9 {
   word-wrap: break-word;
 }
 .editormd-preview-container ol.linenums, .editormd-html-preview ol.linenums {
-  color: #999;
+  color: #f8f8f2;
   padding-left: 2.5em;
 }
 .editormd-preview-container ol.linenums li, .editormd-html-preview ol.linenums li {
@@ -4334,7 +4334,7 @@ hr.editormd-page-break {
   /* plain text */
 }
 .editormd-preview-theme-dark pre .pln {
-  color: #999;
+  color: #f8f8f2;
 }
 .editormd-preview-theme-dark li.L1, .editormd-preview-theme-dark li.L3, .editormd-preview-theme-dark li.L5, .editormd-preview-theme-dark li.L7, .editormd-preview-theme-dark li.L9 {
   background: none;
@@ -4378,7 +4378,7 @@ hr.editormd-page-break {
     color: #080;
   }
   .editormd-preview-theme-dark .kwd {
-    color: #ff9900;
+    color: #f92672;
   }
   .editormd-preview-theme-dark .com {
     color: #444444;
@@ -4390,7 +4390,7 @@ hr.editormd-page-break {
     color: #066;
   }
   .editormd-preview-theme-dark .pun, .editormd-preview-theme-dark .opn, .editormd-preview-theme-dark .clo {
-    color: #660;
+    color: #f8f8f2;
   }
   .editormd-preview-theme-dark .tag {
     color: #ff9900;

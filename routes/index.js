@@ -26,6 +26,12 @@ router.get('/edit', function(req, res, next) {
   
 });
 
+router.post('/edit', function(req, res, next) {
+    res.send('ok')
+  
+});
+
+
 router.post('/edit/save', function(req, res, next) {
     const id = req.body.id;
     console.log()

@@ -7,7 +7,7 @@ let saveing = false;
 if(!saveing){
     saveing=true
     $save.on('click',()=>{
-        const html = testEditor.getHTML();
+        const html = $('.markdown-body').html();
         const markdown = testEditor.getMarkdown();
         const title = $title.val();
         const type = $type.val();
