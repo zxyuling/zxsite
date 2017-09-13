@@ -1,7 +1,8 @@
 const  express = require('express');
 const router = express.Router();
 const editModel = require('../schema/db.js').edit
-
+const multer = require('multer')
+const upload = multer({dest:'./public/upload/'})
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
@@ -17,7 +18,7 @@ router.get('/edit', function(req, res, next) {
                 res.render('edit/edit', {markdown:'',id:''});
             }
             else{
-                res.render('edit/edit', {markdown:rs.markdown,id:id});
+                res.render('edit/edit', {markdown:rs.markdown,id:id,title:rs.title});
             }
         })
     }else{
@@ -26,8 +27,9 @@ router.get('/edit', function(req, res, next) {
   
 });
 
-router.post('/edit', function(req, res, next) {
-    res.send('ok')
+router.post('/edit', upload.single('editormd-image-file'),function(req, res, next) {
+    console.log(req.file)
+    res.send({success:1,url:'/upload/'+req.file.filename})
   
 });
 
