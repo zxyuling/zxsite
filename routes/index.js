@@ -15,14 +15,14 @@ router.get('/edit', function(req, res, next) {
     if(id){
         editModel.findById(id,(err,rs)=>{
             if(err){
-                res.render('edit/edit', {markdown:'',id:''});
+                res.render('edit/edit', {markdown:'',id:'',title:''});
             }
             else{
                 res.render('edit/edit', {markdown:rs.markdown,id:id,title:rs.title});
             }
         })
     }else{
-       res.render('edit/edit', {}); 
+       res.render('edit/edit', {markdown:'',id:'',title:''}); 
     }
   
 });
